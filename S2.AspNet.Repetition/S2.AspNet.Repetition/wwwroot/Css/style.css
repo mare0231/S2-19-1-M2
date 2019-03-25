@@ -96,7 +96,7 @@ section .wrapper {
         }
 
             section .wrapper article .memeSelector img {
-                width: 200px;
+                height: 200px;
             }
 
             section .wrapper article .memeSelector input {
