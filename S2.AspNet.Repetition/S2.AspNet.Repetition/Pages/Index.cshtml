@@ -44,8 +44,25 @@
                     <input type="radio" name="imageselected" value="7" />
                 </div>
             </div>
+            <div class="memeSelector textPosition">
+                <h2>Tekstposition</h2>
+                <label>Top venstre</label>
+                <input type="radio" name="textPosition" value="top-left" />
+                <label>Top midte</label>
+                <input type="radio" name="textPosition" value="top-center" />
+                <label>Top højre</label>
+                <input type="radio" name="textPosition" value="top-right" />
+                <label>Midte</label>
+                <input type="radio" name="textPosition" value="centered" />
+                <label>Bund venstre</label>
+                <input type="radio" name="textPosition" value="bottom-left" />
+                <label>Bund midte</label>
+                <input type="radio" name="textPosition" value="bottom-center" checked />
+                <label>Bund højre</label>
+                <input type="radio" name="textPosition" value="bottom-right" />
+            </div>
             <div class="memeSelector memeText">
-                <input type="text" size="50" name="memeText"  placeholder="Skriv din meme text"/>
+                <input type="text" size="50" name="memeText" placeholder="Skriv din meme text" />
                 <input type="submit" value="Generer meme" />
             </div>
         </form>
@@ -55,7 +72,7 @@
 {
     <div class="generatedMeme">
         <img src="@Model.SelectedImageUrl" />
-        <div class="bottom-center">
+        <div class="@Model.textPosition">
             @Model.MemeText
         </div>
     </div>
