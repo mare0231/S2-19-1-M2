@@ -121,6 +121,46 @@ section .wrapper {
                 text-align: center;
             }
 
+            section .wrapper article .textPosition input {
+                margin-left: 20px;
+            }
+
+        section .wrapper article .fontSize {
+            color: #ffffff;
+            text-align: center;
+            margin: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            section .wrapper article .fontSize h2 {
+                color: #ffffff;
+                width: 100%;
+                text-align: center;
+            }
+
+            section .wrapper article .fontSize input {
+                margin-left: 20px;
+            }
+
+        section .wrapper article .textColor {
+            color: #ffffff;
+            text-align: center;
+            margin: 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            section .wrapper article .textColor h2 {
+                color: #ffffff;
+                width: 100%;
+                text-align: center;
+            }
+
+            section .wrapper article .textColor input {
+                margin-left: 20px;
+            }
+
         section .wrapper article .memeText {
             margin-top: 10px;
         }
@@ -185,6 +225,32 @@ section .generatedMeme {
         bottom: 8px;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    /* Font size */
+    section .generatedMeme .small {
+        font-size: 15px;
+    }
+
+    section .generatedMeme .medium {
+        font-size: 25px;
+    }
+
+    section .generatedMeme .large {
+        font-size: 50px;
+    }
+
+    /* Text color */
+    section .generatedMeme .black {
+        color: #000000;
+    }
+
+    section .generatedMeme .white {
+        color: #ffffff;
+    }
+
+    section .generatedMeme .red {
+        color: #ff0000;
     }
 
 @media screen and (max-width: 900px) {

@@ -19,6 +19,10 @@ namespace S2.AspNet.Repetition.Pages
         public string TextPosition { get; set; }
         [BindProperty(SupportsGet = true)]
         public string MemeName { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string FontSize { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string TextColor { get; set; }
         public void OnGet()
         {
             MemeImageRepository memeImageRepo = new MemeImageRepository(@"Data Source=(localdb)\mssqllocaldb;Initial Catalog=MemeGenerator;Integrated Security=True;");
