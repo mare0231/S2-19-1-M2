@@ -1,0 +1,15 @@
+﻿@page
+@model S2.AspNet.Repetition.Pages.NewMemeModel
+@{
+    ViewData["Title"] = Model.MemeName;
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.MemeName</h2>
+<div class="generatedMeme">
+    <img src="@Model.SelectedImageUrl" />
+    <div class="@Model.TextPosition">
+        @Model.MemeText
+    </div>
+</div>
+<a href="Index">Tilbage til memegeneratoren</a>

@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\S2.AspNET.Repetition.DAL\S2.AspNET.Repetition.DAL.csproj" />
+    <ProjectReference Include="..\S2.AspNET.Repetition.Entities\S2.AspNET.Repetition.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
