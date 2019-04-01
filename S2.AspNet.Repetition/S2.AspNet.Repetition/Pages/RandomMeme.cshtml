@@ -1,0 +1,15 @@
+﻿@page
+@model S2.AspNet.Repetition.Pages.RandomMemeModel
+@{
+    ViewData["Title"] = "RandomMeme";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h2>Tilfældig meme</h2>
+
+<div class="generatedMeme">
+    <img src="@Model.MemeImage.Url" />
+    <div class="@Model.MemeCreation.Position @Model.MemeCreation.Color @Model.MemeCreation.Size">
+        @Model.MemeCreation.MemeText
+    </div>
+</div>

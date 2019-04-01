@@ -15,9 +15,7 @@ namespace S2.AspNet.Repetition.Pages
         public void OnGet()
         {
             MemeImageRepository memeImageRepo = new MemeImageRepository(@"Data Source=(localdb)\mssqllocaldb;Initial Catalog=MemeGenerator;Integrated Security=True;");
-
             MemeImages = memeImageRepo.GetAllMemeImages();
-            
         }
     }
 }
